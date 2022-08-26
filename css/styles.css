@@ -1,0 +1,224 @@
+:root {
+    --praymare-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-akcent-color: #2196F3;
+    --praymary-background-color: #FFFFFF;
+    --button-background-color: #F5F4FA;
+}
+body {
+    letter-spacing: 0.03em;
+    font-family: Roboto, sans-serif;
+    background: #FFFFFF;
+    color:var(--praymare-text-color);
+}
+/* Основные цвета #212121, #757575 /
+/* Цвета логотипа #2196F3, #000000, #ffffff */
+/* акцент #2196F3 */
+
+
+
+/* Убираем подчёркивание */
+.site-nav,
+.header-contacts,
+.portfolio-buttons,
+.examples-img,
+.contacts-footer,
+.main-benefits,
+.main-work,
+.team {
+    list-style: none;
+}
+
+nav a,
+footer a,
+.examples-img a,
+.header-contacts a {
+    text-decoration: none;
+}
+
+
+/* зміна кольору при наведенні курсору */
+.header-contacts a:hover,
+.header-contacts a:focus,
+.header-contacts a:active,
+.header-contacts .current,
+.site-nav a:hover,
+.site-nav a:focus, 
+.site-nav a:active,
+.site-nav .current {
+    color: var(--logo-akcent-color);
+}
+/* шапка, навигация, футер */
+/* підсвітка поточної сторінки */
+
+.logo {
+    font-family: Raleway, cursive;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.logo-web {
+    font-family: Raleway, cursive;
+    color: var(--logo-akcent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.site-nav a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--title-text-color);
+}
+.contact-info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--praymare-text-color);
+}
+
+/* головна частина */
+.button-title {
+    cursor: pointer;
+}
+.title-section {
+    background: #2F303A;
+}
+.title {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--praymary-background-color);
+}
+.button-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color:var(--praymary-background-color);
+    background: #2196F3;
+   }
+
+/* переваги */
+.titl-benefits {
+    font-size: 14px;
+    line-height: 1.14;
+     color: var(--title-text-color);
+    text-transform: uppercase;
+}
+
+
+
+/* діяльність */
+.descr-benefits {
+    font-size: 14px;
+    line-height: 1.7;
+   
+}
+/* команда */
+.titl-main {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+.descr-job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    
+}
+
+.titl-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color:var(--title-text-color) #212121;
+    
+}
+
+/* портфолио button */
+
+.button.examples {
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    background: var(--button-background-color);
+    border-radius: 4px;
+    color: var(--title-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button.examples:hover,
+.button.examples:focus {
+    background: var(--logo-akcent-color);
+    border-radius: 4px;
+    color: var(--praymary-background-color);
+}
+
+.titl-portfolio {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+
+}
+
+.descr-type {
+    color: var(--praymare-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.example {
+    font-size: 24px;
+    color: var(--title-text-color);
+    font-style: italic;
+
+}
+.example-deskr {
+    font-style: initial;
+}
+
+/* футер */
+.footer-general {
+    background: #2F303A;
+}
+
+.contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--praymary-background-color);
+
+}
+
+.logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    font-family: Raleway, cursive;
+    color: var(--praymary-background-color);
+}
+
+.contact-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+    color: var(--logo-akcent-color);
+}
+
