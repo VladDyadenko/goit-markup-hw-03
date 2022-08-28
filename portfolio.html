@@ -20,35 +20,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav>
-          <a class="logo" href="./index.html"
-            ><p><span class="logo-web">Web</span>Studio</p></a
-          >
-          <ul class="site-nav">
-            <li><a href="./index.html">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="current">Портфоліо</a>
-            </li>
-            <li><a href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-info"
-              >info@devstudio.com</a
+    <!-- <div class="container"> -->
+      <header class="header-general">
+        <div class="nav">
+          <nav>
+            <a class="logo" href="./index.html"
+              ><p><span class="logo-web">Web</span>Studio</p></a
             >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contact-info">+380961111111</a>
-          </li>
-        </ul>
+            <ul class="site-nav">
+              <li><a href="./index.html" >Студія</a></li>
+              <li>
+                <a href="./portfolio.html" class="current">Портфоліо</a>
+              </li>
+              <li><a href="">Контакти</a></li>
+            </ul>
+          </nav>
+        <!-- </div> -->
+
+        <div class="header-contacts-div">
+          <ul class="header-contacts">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-info"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="contact-info">+380961111111</a>
+            </li>
+          </ul>
+        </div>
       </header>
+    </div>
       <main>
         <section>
-          <h1>Приклади наших робіт</h1>
-          <div class="btn">
+          <h1 class="benefits">Приклади наших робіт</h1>
+          <div class="container">          <div class="btn">
             <ul class="portfolio-buttons">
               <li>
                 <button type="button" class="button examples all">Усі</button>
@@ -79,7 +85,7 @@
           <ul class="examples-img">
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/technoquackcompr.jpg"
                   alt="laptop with website on monitor"
                   width="370"
@@ -91,7 +97,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/postercompr.jpg"
                   alt="poster with basketball players"
                   width="370"
@@ -103,7 +109,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/restaurantcompr.jpg"
                   alt="restaurant logo"
                   width="370"
@@ -115,7 +121,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/primecompr.jpg"
                   alt="headphone"
                   width="370"
@@ -127,7 +133,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/boxescompr.jpg"
                   alt="two packing boxes"
                   width="370"
@@ -139,7 +145,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/borderscompr.jpg"
                   alt="Apple computer"
                   width="370"
@@ -151,7 +157,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/editioncompr.jpg"
                   alt="magazine spread"
                   width="370"
@@ -163,7 +169,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/labcompr.jpg"
                   alt="label"
                   width="370"
@@ -175,7 +181,7 @@
             </li>
             <li>
               <a href="">
-                <img
+                <img class="img-portfolio"
                   src="./images/growingcompr.jpg"
                   alt="workplace with laptop"
                   width="370"
@@ -186,7 +192,8 @@
               </a>
             </li>
           </ul>
-        </section>
+        </section></div>
+
       </main>
 
       <footer class="footer-general">
@@ -195,7 +202,9 @@
         >
         <address class="contact">
           <ul class="contacts-footer">
-            <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+            <li>
+              <p class="contact-descr">м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
             <li>
               <a href="mailto:info@devstudio.com" class="contact-footer"
                 >info@devstudio.com</a

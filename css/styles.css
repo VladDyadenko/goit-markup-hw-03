@@ -21,21 +21,20 @@ body {
 
 .container {
     width: 1200px;
+    padding-bottom: 94px;
+    padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
+    /* border: 1px solid tomato; */
 
 }
-.conteiner-title {
-    padding-top: 20px;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /* скрыть h2 Переваги компанії */
 .benefits {
     color: transparent;
     width: 0;
     height: 0;
+    margin: 0%;
 }
 
 
@@ -106,6 +105,10 @@ footer a,
 /* головна частина */
 
 .title-section {
+    width: 1600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 74px;
     text-align: center;
     padding-top: 200px;
@@ -158,6 +161,9 @@ footer a,
 
 
 /* діяльність */
+.main-work {
+    padding-left: 0;
+}
 .conteiner-work {
     margin-bottom: 94px;
 }
@@ -169,6 +175,10 @@ footer a,
    
 }
 /* команда */
+
+.team {
+    padding-left: 0%;
+}
 
 .conteiner-team {
     display: inline-block;
@@ -182,6 +192,7 @@ footer a,
     color: var(--title-text-color);
 }
 .descr-job {
+    margin-top: 10px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -189,7 +200,7 @@ footer a,
 }
 
 .titl-name {
-
+    margin-top: 30px;
     min-width: 104px;
     font-weight: 500;
     font-size: 16px;
@@ -200,10 +211,33 @@ footer a,
 }
 
 /* портфолио button */
+.titl-portfolio {
+    margin-bottom: 4px;
+    min-width: 322px;
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    /* border: 1px solid tomato; */
+
+}
+.img-portfolio {
+    margin-bottom: 20px;
+    margin-right: 0;
+    display: block;
+    /* border: 1px solid tomato; */
+}
+.examples-img {
+    padding-left: 0;
+}
+.portfolio-buttons {
+    padding-left: 0;
+}
 .button {
     box-sizing: border-box;
 }
 .btn {
+    margin-bottom: 34px;
     width: 1200px;
     display: inline-block;
     text-align: center;
@@ -256,18 +290,14 @@ footer a,
     color: var(--praymary-background-color);
 }
 
-.titl-portfolio {
-    color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
-
-}
 
 .descr-type {
+    min-width: 322px;
     color: var(--praymare-text-color);
     font-size: 16px;
     line-height: 1.88;
+    /* border: 1px solid tomato; */
+    
 }
 
 .example {
@@ -281,7 +311,24 @@ footer a,
 }
 
 /* футер */
+.contact-footer {
+    min-width: 231px;
+    margin-bottom: 9px;
+
+}
+.contact-descr {
+    min-width: 231px;
+    padding-left: 215px;
+    margin-bottom: 9px;
+}
+.contacts-footer {
+    padding-left: 0;
+}
 .footer-general {
+    width: 1600px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     background: #2F303A;
 }
 
@@ -294,6 +341,10 @@ footer a,
 }
 
 .logo-footer {
+    margin-bottom: 20px;
+    margin-left: 215px;
+    display: block;
+    padding-top: 60px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -302,6 +353,7 @@ footer a,
 }
 
 .contact-footer {
+    margin-left: 215px;
     color: rgba(255, 255, 255, 0.6);
 }
 
