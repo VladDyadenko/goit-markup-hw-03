@@ -72,6 +72,15 @@ footer a,
 }
 /* шапка, навигация, футер */
 /* підсвітка поточної сторінки */
+.scrol {
+    display: flex;
+}
+.header-contacts {
+    display: flex;
+}
+.general-nav {
+    display: flex;
+}
 
 .logo {
     font-family: Raleway, cursive;
