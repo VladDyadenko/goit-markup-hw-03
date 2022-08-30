@@ -313,6 +313,9 @@ footer a,
 }
 
 /* портфолио button */
+.examples-img li {
+    border-bottom: 1px solid #EEEEEE;
+}
 
 .examples-img {
     padding-left: 0;
