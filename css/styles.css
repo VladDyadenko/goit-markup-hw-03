@@ -36,6 +36,8 @@ p {
     width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid tomato; */
@@ -86,6 +88,11 @@ footer a,
 
 /* шапка, навигация */
 /* підсвітка поточної сторінки */
+.container.secondery {
+    padding: 0;
+    width: 1600px;
+
+}
 
 .header-contacts .scrol-contacts:nth-child(1) {
     margin-right: 50px;
@@ -98,19 +105,26 @@ footer a,
 }
 .header-contacts {
     align-items: center;
-    margin-left: 344px;
+    margin-left: auto;
+}
+.header-contacts li {
+    padding-left: 0;
 }
 .scrol:not(:last-child) {
     margin-right: 50px;
 }
 
+.container.praymery {
+    width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
+}
 .praymery {
+    padding-top: 0;
+    padding-bottom: 0;
     border-bottom: 1px solid #ECECEC;
 }
 
-.container.praymery {
-    padding: 0;
-}
 .scrol, .header-contacts, .general-nav  {
     display: flex;
 }
@@ -208,9 +222,12 @@ footer a,
    }
 
 /* переваги */
-.conteiner-benefits {
-    margin-bottom: 94px;
+
+.container.third {
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
 .titl-benefits {
     margin-bottom: 10px;
 
@@ -220,6 +237,10 @@ footer a,
     color: var(--title-text-color);
     text-transform: uppercase;
 }
+.main-benefits li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .main-benefits {
     padding-left: 0;
     display: flex;
@@ -228,10 +249,17 @@ footer a,
 
 
 /* діяльність */
-.main-work {
-    padding-left: 0;
+.main-work li:not(:last-child) {
+    margin-right: 30px;
 }
-
+.main-work {
+    display: flex;
+    padding-left: 0;
+   
+}
+.img-work {
+    margin-bottom: 0;
+}
 .descr-benefits {
     width: 270px;
     font-size: 14px;
@@ -240,8 +268,12 @@ footer a,
    
 }
 /* команда */
+.team li:not(:last-child) {
+    margin-right: 30px;
+}
 
 .team {
+    display: flex;
     padding-left: 0%;
 }
 
@@ -281,6 +313,30 @@ footer a,
 }
 
 /* портфолио button */
+
+.examples-img {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: 13.3%;
+    
+}
+
+.button {
+    border: none;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.portfolio-buttons li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .titl-portfolio {
     margin-bottom: 4px;
     min-width: 322px;
@@ -298,15 +354,13 @@ footer a,
     display: block;
     /* border: 1px solid tomato; */
 }
-.examples-img, .portfolio-buttons {
-    padding-left: 0;
-}
+
 
 .button {
     box-sizing: border-box;
 }
 .btn {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     width: 1200px;
     display: inline-block;
     text-align: center;
@@ -384,6 +438,7 @@ footer a,
 
 /* футер */
 .container.last {
+    padding-top: 0;
     padding-bottom: 0;
     width: 1600px;
 }
