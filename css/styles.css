@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+/* Основные цвета #212121, #757575 /
+/* Цвета логотипа #2196F3, #000000, #ffffff */
+/* акцент #2196F3 */
+
 :root {
     --praymare-text-color: #757575;
     --title-text-color: #212121;
@@ -14,12 +18,21 @@ body {
     font-family: Roboto, sans-serif;
     background: #FFFFFF;
     color:var(--praymare-text-color);
+
 }
-/* Основные цвета #212121, #757575 /
-/* Цвета логотипа #2196F3, #000000, #ffffff */
-/* акцент #2196F3 */
+
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+
+}
+
 
 .container {
+
     width: 1200px;
     padding-bottom: 94px;
     padding-top: 94px;
@@ -70,19 +83,45 @@ footer a,
 .site-nav .current {
     color: var(--logo-akcent-color);
 }
-/* шапка, навигация, футер */
+
+/* шапка, навигация */
 /* підсвітка поточної сторінки */
+
+.header-contacts .scrol-contacts:nth-child(1) {
+    margin-right: 50px;
+}
+.site-nav li {
+    padding: 32px 0;
+}
 .scrol {
-    display: flex;
+    display: block;
 }
 .header-contacts {
-    display: flex;
+    align-items: center;
+    margin-left: 344px;
 }
-.general-nav {
+.scrol:not(:last-child) {
+    margin-right: 50px;
+}
+
+.praymery {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container.praymery {
+    padding: 0;
+}
+.scrol, .header-contacts, .general-nav  {
     display: flex;
 }
 
+
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 50px;
+
     font-family: Raleway, cursive;
     color: #000000;
     font-weight: 700;
@@ -96,7 +135,15 @@ footer a,
     font-size: 26px;
     line-height: 1.2;
 }
+
+.nav li, .header-contacts li, .header-contacts {
+    padding-left: 0;
+}
+.site-nav.general-nav {
+    padding-left: 0;
+}
 .site-nav a{
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -112,13 +159,17 @@ footer a,
 }
 
 /* головна частина */
+.container.secondary {
+    width: 1600px;
+}
 
 .title-section {
-    width: 1600px;
+    /* width: 1200px; */
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 74px;
+
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -127,8 +178,12 @@ footer a,
 
 }
 .title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -142,6 +197,7 @@ footer a,
     padding: 10px 32px;
     cursor: pointer;
     min-width: 152px;
+    
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -157,14 +213,16 @@ footer a,
 }
 .titl-benefits {
     margin-bottom: 10px;
+
     width: 270px;
     font-size: 14px;
     line-height: 1.14;
-     color: var(--title-text-color);
+    color: var(--title-text-color);
     text-transform: uppercase;
 }
 .main-benefits {
     padding-left: 0;
+    display: flex;
 
 }
 
@@ -173,9 +231,7 @@ footer a,
 .main-work {
     padding-left: 0;
 }
-.conteiner-work {
-    margin-bottom: 94px;
-}
+
 .descr-benefits {
     width: 270px;
     font-size: 14px;
@@ -193,15 +249,19 @@ footer a,
     display: inline-block;
     padding-top: 94px;
 }
+
 .titl-main {
     margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: var(--title-text-color);
 }
+
 .descr-job {
     margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -211,6 +271,7 @@ footer a,
 .titl-name {
     margin-top: 30px;
     min-width: 104px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -223,6 +284,7 @@ footer a,
 .titl-portfolio {
     margin-bottom: 4px;
     min-width: 322px;
+
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2.0;
@@ -236,12 +298,10 @@ footer a,
     display: block;
     /* border: 1px solid tomato; */
 }
-.examples-img {
+.examples-img, .portfolio-buttons {
     padding-left: 0;
 }
-.portfolio-buttons {
-    padding-left: 0;
-}
+
 .button {
     box-sizing: border-box;
 }
@@ -252,7 +312,7 @@ footer a,
     text-align: center;
 }
 
-.button.examples.all{
+.button.examples.all {
     min-width: 23px;
     padding: 6px 25px;
 
@@ -280,6 +340,7 @@ footer a,
 
 .button.examples {
     padding: 6px 22px;
+
     cursor: pointer;
     letter-spacing: 0.03em;
     font-family: 'Roboto';
@@ -302,6 +363,7 @@ footer a,
 
 .descr-type {
     min-width: 322px;
+
     color: var(--praymare-text-color);
     font-size: 16px;
     line-height: 1.88;
@@ -315,29 +377,42 @@ footer a,
     font-style: italic;
 
 }
+
 .example-deskr {
     font-style: initial;
 }
 
 /* футер */
+.container.last {
+    padding-bottom: 0;
+    width: 1600px;
+}
 .contact-footer {
-    min-width: 231px;
+
+    ngmin-width: 231px;
     margin-bottom: 9px;
+    padding-left: 0;
+    margin-left: 215px;
+    color: rgba(255, 255, 255, 0.6);
 
 }
+
+.contacts-footer {
+    padding-left: 0;
+} 
+
 .contact-descr {
     min-width: 231px;
     padding-left: 215px;
     margin-bottom: 9px;
 }
-.contacts-footer {
-    padding-left: 0;
-}
+
 .footer-general {
-    width: 1600px;
+    /* width: 1600px; */
     padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
+
     background: #2F303A;
 }
 
@@ -354,6 +429,7 @@ footer a,
     margin-left: 215px;
     display: block;
     padding-top: 60px;
+
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -361,24 +437,12 @@ footer a,
     color: var(--praymary-background-color);
 }
 
-.contact-footer {
-    margin-left: 215px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
 .contact-footer:hover,
 .contact-footer:focus {
     color: var(--logo-akcent-color);
 }
-/* block layout */
-.header-general{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h2, h3, h4, ul, p {
-    margin: 0;
-}
+
+
 
 
 
