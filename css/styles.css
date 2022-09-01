@@ -265,7 +265,7 @@ p {
     border-radius: 0px 0px 4px 4px;
 }
 
-.container.team-container:not(.team) {
+.section.section-team {
     background-color: var(--button-background-color);
 }
 
