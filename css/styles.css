@@ -2,9 +2,6 @@ html {
     box-sizing: border-box;
 }
 
-/* Основные цвета #212121, #757575 /
-/* Цвета логотипа #2196F3, #000000, #ffffff */
-/* акцент #2196F3 */
 
 :root {
     --praymare-text-color: #757575;
@@ -12,13 +9,17 @@ html {
     --logo-akcent-color: #2196F3;
     --praymary-background-color: #FFFFFF;
     --button-background-color: #F5F4FA;
+    --portfolio-border-color: #EEEEEE;
+    --header-border-color: #ECECEC;
+    --logo-text-color: #000000;
+    --hero-background-color: #2F303A;
+
 }
 body {
     letter-spacing: 0.03em;
     font-family: Roboto, sans-serif;
-    background: #FFFFFF;
+    background-color:var(--praymary-background-color);
     color:var(--praymare-text-color);
-
 }
 
 h2,
@@ -27,23 +28,22 @@ h4,
 ul,
 p {
     margin: 0;
-
 }
 
-
-.container {
-
-    width: 1200px;
+.section {
     padding-bottom: 94px;
     padding-top: 94px;
+}
+
+.container {
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-/* скрыть h2 Переваги компанії */
+/* скрыть h2 Переваги компанії, Портфолио */
 .benefits {
     color: transparent;
     width: 0;
@@ -55,7 +55,6 @@ p {
 
 /* Убираем подчёркивание */
 .site-nav,
-.header-contacts,
 .portfolio-buttons,
 .examples-img,
 .contacts-footer,
@@ -66,7 +65,6 @@ p {
 }
 
 .nav .logo,
-.site-nav .nav-link,
 .footer-general .logo-footer,
 .examples-img .examples-link,
 .header-contacts .contact-info {
@@ -94,44 +92,37 @@ p {
 .site-nav .nav-list {
     padding: 32px 0;
 }
-.scrol {
-    display: block;
-}
+
 .header-contacts {
+    display: flex;
     align-items: center;
     margin-left: 345px;
-}
-.header-contacts li {
     padding-left: 0;
+    list-style: none;
+}
+.header-contacts .contact {
+    padding: 32px 0;
 }
 .nav-list:not(:last-child) {
     margin-right: 50px;
 }
 
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 .link-header {
+    display: flex;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .site-header {
-
-    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .link-conteiner {
+    display: flex;
     justify-content: center;
 }
 
-.link-conteiner,
-.header-contacts,
-.link-header,
 .general-nav  {
     display: flex;
 }
@@ -145,34 +136,29 @@ p {
     margin-left: 0;
 
     font-family: Raleway, cursive;
-    color: #000000;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-}
-.logo-web {
-    font-family: Raleway, cursive;
-    color: var(--logo-akcent-color);
+    color: var(--logo-text-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 }
 
-.nav .nav-list,
-.header-contacts .contact,
-.header-contacts {
+.logo-web {
+    color: var(--logo-akcent-color);
+}
+
+.nav .nav-list {
     padding-left: 0;
 }
 .site-nav.general-nav {
     padding-left: 0;
 }
 .site-nav .nav-link{
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--title-text-color);
+    text-decoration: none;
 }
 .contact-info {
     font-weight: 500;
@@ -184,19 +170,14 @@ p {
 
 /* головна частина */
 
-
-.title-section {
-    /* width: 1200px; */
-    margin-top: 20px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+.hero {
     margin-bottom: 74px;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
-    background: #2F303A;
-   
-
+    background: var(--hero-background-color);
 }
+
 .title {
     width: 696px;
     margin-left: auto;
@@ -216,7 +197,10 @@ p {
     border: none;
     padding: 10px 32px;
     cursor: pointer;
-    min-width: 152px;
+    min-width: 216px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     
     font-family: Roboto;
     font-weight: 700;
@@ -224,10 +208,15 @@ p {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color:var(--praymary-background-color);
-    background: #2196F3;
+    background:var(--logo-akcent-color);
    }
 
 /* переваги */
+
+.container.benefits-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .titl-benefits {
     margin-bottom: 10px;
@@ -249,31 +238,38 @@ p {
 
 
 /* діяльність */
-.main-work li:not(:last-child) {
+
+.img-work {
+    display: block;
+}
+
+.main-work .benefits-list:not(:last-child) {
     margin-right: 30px;
 }
 
 .main-work {
     display: flex;
-    padding-left: 0;
-   
-}
-
-.img-work {
-    margin-bottom: 0;
+    padding-left: 0; 
 }
 
 .descr-benefits {
     width: 270px;
     font-size: 14px;
     line-height: 1.7;
-
-   
 }
 
 /* команда */
+.team .team-link {
+    background-color: var(--praymary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
-.team li:not(:last-child) {
+.container.team-container:not(.team) {
+    background-color: var(--button-background-color);
+}
+
+.team .team-link:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -302,7 +298,6 @@ p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    
 }
 
 .titl-name {
@@ -314,12 +309,15 @@ p {
     line-height: 1.19;
     text-align: center;
     color:var(--title-text-color) #212121;
-    
 }
 
 /* портфолио button */
-.examples-img li {
-    border-bottom: 1px solid #EEEEEE;
+
+
+.list-portfolio {
+    padding: 20px 22px;
+    min-width: 322px;
+    border: 1px solid var(--portfolio-border-color)
 }
 
 .examples-img {
@@ -332,6 +330,7 @@ p {
 
 .button {
     border: none;
+    box-sizing: border-box;
 }
 
 .portfolio-buttons {
@@ -347,7 +346,7 @@ p {
 .titl-portfolio {
     margin-bottom: 4px;
     min-width: 322px;
-
+    
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2.0;
@@ -356,16 +355,9 @@ p {
 }
 
 .img-portfolio {
-    margin-bottom: 20px;
     margin-right: 0;
     display: block;
-    /* border: 1px solid tomato; */
-}
-
-
-.button {
-    box-sizing: border-box;
-}
+ }
 
 .btn {
     margin-bottom: 50px;
@@ -375,26 +367,22 @@ p {
 }
 
 .all {
-    width: 73px;
+    min-width: 73px;
 }
 .web {
-    width: 125px;
-
+    min-width: 125px;
 }
 
 .applications {
-    width: 112px;
-
+    min-width: 112px;
 }
 
 .design {
-    width: 103px;
-
+    min-width: 103px;
 }
 
 .marketing {
-    width: 130px;
-
+    min-width: 130px;
 } 
 
 .button.examples {
@@ -409,7 +397,6 @@ p {
     border-radius: 4px;
     background: var(--button-background-color);
     color: var(--title-text-color);
-    
 }
 .button.examples:hover,
 .button.examples:focus {
@@ -425,15 +412,12 @@ p {
     color: var(--praymare-text-color);
     font-size: 16px;
     line-height: 1.88;
-    /* border: 1px solid tomato; */
-    
 }
 
 .example {
     font-size: 24px;
     color: var(--title-text-color);
     font-style: italic;
-
 }
 
 .example-deskr {
@@ -472,7 +456,7 @@ p {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background: #2F303A;
+    background:var(--hero-background-color);
 }
 
 .contact-list {
@@ -484,12 +468,10 @@ p {
     margin-bottom: 9px;
 }
 .contact {
-
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     color: var(--praymary-background-color);
-
 }
 
 .logo-footer {
@@ -508,6 +490,7 @@ p {
 .contact-footer:focus {
     color: var(--logo-akcent-color);
 }
+
 
 
 
