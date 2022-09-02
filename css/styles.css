@@ -44,17 +44,13 @@ p {
     margin-right: auto;
 }
 
+
 /* скрыть h2 Переваги компанії, Портфолио */
 .benefits {
     color: transparent;
     width: 0;
     height: 0;
     margin: 0%;
-}
-
-
-.hero-section {
-    padding-top: 20px;
 }
 
 
